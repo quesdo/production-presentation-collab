@@ -345,6 +345,10 @@ function nextSlideLocal() {
     if (!soundStarted) {
         toggleVisibility("Manufacturing Sound", true);
         soundStarted = true;
+
+        // HIDE AS IS Production and SHOW PSY Content immediately when starting
+        hideASISProduction();
+        showMedia("PSY Content");
     }
 
     currentSlide++;
@@ -363,10 +367,6 @@ function nextSlideLocal() {
 
         if (slide.media) {
             showMedia(slide.media);
-
-            if (slide.media === "PSY Content") {
-                hideASISProduction();
-            }
         }
 
         textContent.classList.remove('slide-out');
