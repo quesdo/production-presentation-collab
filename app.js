@@ -317,8 +317,8 @@ function initPresentation() {
     const nextBtn = document.getElementById('nextBtn');
     const textContent = document.getElementById('textContent');
 
-    hideAllMedia();
-    toggleVisibility("Manufacturing Sound", false);
+    // Don't hide/show anything at initial load - let SDK scene stay as is
+    // Hiding will happen when presentation starts
 
     setTimeout(() => {
         textContent.classList.add('show');
@@ -410,7 +410,14 @@ function showEndScreen() {
 }
 
 async function restartPresentation() {
-    // Simply reload the page for a clean restart
+    // Hide all media and Manufacturing Sound before restart
+    hideAllMedia();
+    toggleVisibility("Manufacturing Sound", false);
+
+    // Wait for hide commands to be processed
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    // Reload the page for a clean restart
     window.location.reload();
 }
 
