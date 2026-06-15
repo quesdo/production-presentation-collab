@@ -25,6 +25,10 @@ const translations = {
             {
                 text: "The result? Errors are prevented before they happen, and know-how is captured and continuously capitalized in order to ensure the right level of productivity to address the A&D market.",
                 media: "PSY Content"
+            },
+            {
+                text: "OXOS Virtual Twin\nProduction System — Live 3D Experience",
+                media: "TOBELShape"
             }
         ],
         buttons: {
@@ -60,6 +64,10 @@ const translations = {
             {
                 text: "Le résultat ? Les erreurs sont évitées avant qu'elles ne se produisent, et le savoir-faire est capturé et continuellement capitalisé afin d'assurer le bon niveau de productivité pour répondre au marché A&D.",
                 media: "PSY Content"
+            },
+            {
+                text: "OXOS Jumeau Virtuel\nSystème de Production — Expérience 3D en direct",
+                media: "TOBELShape"
             }
         ],
         buttons: {
@@ -95,6 +103,10 @@ const translations = {
             {
                 text: "¿El resultado? Los errores se previenen antes de que ocurran, y el know-how se captura y capitaliza continuamente para asegurar el nivel correcto de productividad para abordar el mercado A&D.",
                 media: "PSY Content"
+            },
+            {
+                text: "OXOS Gemelo Virtual\nSistema de Producción — Experiencia 3D en vivo",
+                media: "TOBELShape"
             }
         ],
         buttons: {
@@ -130,6 +142,10 @@ const translations = {
             {
                 text: "Das Ergebnis? Fehler werden verhindert, bevor sie passieren, und Know-how wird erfasst und kontinuierlich kapitalisiert, um das richtige Produktivitätsniveau für den A&D-Markt zu gewährleisten.",
                 media: "PSY Content"
+            },
+            {
+                text: "OXOS Virtueller Zwilling\nProduktionssystem — Live 3D-Erlebnis",
+                media: "TOBELShape"
             }
         ],
         buttons: {
@@ -165,6 +181,10 @@ const translations = {
             {
                 text: "结果呢？错误在发生之前就被预防，know-how被捕获并持续积累，以确保正确的生产力水平来应对航空航天和国防市场。",
                 media: "PSY Content"
+            },
+            {
+                text: "OXOS 虚拟孪生\n生产系统 — 实时3D体验",
+                media: "TOBELShape"
             }
         ],
         buttons: {
@@ -228,7 +248,7 @@ function hideMedia(mediaName) {
 }
 
 function hideAllMedia() {
-    const allMedia = ["PSY 1", "PSY 2", "PSY 3", "PSY 4", "PSY 5", "PSY Content"];
+    const allMedia = ["PSY 1", "PSY 2", "PSY 3", "PSY 4", "PSY 5", "PSY Content", "TOBELShape"];
     allMedia.forEach(media => {
         toggleVisibility(media, false);
     });
