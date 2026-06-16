@@ -417,6 +417,10 @@ function showEndScreen() {
     const slideText = textContent.querySelector('.slide-text');
     const nextBtn = document.getElementById('nextBtn');
 
+    // Show General and hide virtual_training when finishing
+    toggleVisibility("General", true);
+    toggleVisibility("virtual_training", false);
+
     textContent.classList.remove('show');
     nextBtn.classList.remove('show');
 
